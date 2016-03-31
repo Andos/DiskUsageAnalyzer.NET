@@ -64,6 +64,10 @@ namespace DiskUsageAnalyzer
 				//If we cannot traverse further because of the directory access rules then stop.
 				return;
 			}
+			catch (PathTooLongException)
+			{
+
+			}
 		}
 
         //Calculates the size in bytes of a folder.
